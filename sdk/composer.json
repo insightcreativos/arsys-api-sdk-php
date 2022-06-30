@@ -1,0 +1,12 @@
+{
+  "name": "arsys/api-sdk-php",
+  "type": "library",
+  "description": "Arsys API SDK",
+  "version": "2.0.7",
+  "keywords": ["arsys", "domain", "api", "sdk"],
+  "homepage": "https://dev.arsys.com",
+  "license": "LGPL-3.0-only",
+  "require": {
+    "php": ">=5.6.0"
+  }
+}
