@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/insightcreativos/arsys-api-sdk-php/master/arsys.png?sanitize=true&raw=true" />
+<img src="https://raw.githubusercontent.com/insightcreativos/arsys-whmcs-registrar/master/logo.png?sanitize=true&raw=true" />
 
 # Arsys API SDK
 
