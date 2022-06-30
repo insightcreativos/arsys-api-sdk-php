@@ -1,4 +1,4 @@
-[![Arsys](arsys.png)](https://www.arsys.es/)
+<img src="https://raw.githubusercontent.com/insightcreativos/arsys-api-sdk-php/master/logo.png?sanitize=true&raw=true" />
 
 # Arsys API SDK
 
