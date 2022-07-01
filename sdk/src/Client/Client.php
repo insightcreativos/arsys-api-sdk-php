@@ -2,7 +2,7 @@
 
 /**
  * POST cURL client for the DonDominio API (using SIMPLE-POST).
- * @package DonDominioPHP
+ * @package ArsysPHP
  * @subpackage Client
  */
 
@@ -28,7 +28,7 @@ class Client implements \Arsys\API\Client\Client_Interface {
 	 * @var array
 	 */
 	protected $options = [
-		'endpoint'        => 'https://simple-api.dondominio.net',
+		'endpoint'        => '',
 		'port'            => 443,
 		'timeout'         => 15,
 		'debug'           => false,
