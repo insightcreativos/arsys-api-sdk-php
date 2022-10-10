@@ -744,6 +744,34 @@ class Domain extends AbstractWrapper {
 	}
 
 	/**
+	 * Buscar dominio.
+	 *
+	 * Search for suggestion of domain
+	 *
+	 * @link https://domain.apitool.info/help/index.html#api-Domains-CheckDomain
+	 *
+	 * @param string $domain Domain name or Domain ID to get the authcode for
+	 *
+	 * @return Response
+	 * @throws \Exception
+	 */
+	protected function domainSuggests( $domain ) {
+
+		/**
+			[query] => ticihdodi
+			[language] => es
+			[tlds] => com,net,org,biz,info,eu
+		 */
+		$data = [
+			'sld' => $domain['query'],
+		];
+
+		return $this->execute( 'domains/check_availability?' . http_build_query( $data ) );
+
+//		return $this->output( $servers );
+	}
+
+	/**
 	 * HACER DOMAIN getAuthCode
 	 *
 	 * Get the authcode for a domain in the account.
@@ -756,7 +784,11 @@ class Domain extends AbstractWrapper {
 	 * @throws \Exception
 	 */
 	protected function getAuthCode( $domain ) {
-		throw new \Exception( __CLASS__ . ' ' . __FUNCTION__ . ' Not implemented' );
+        return new \Arsys\API\Response\Response(
+            '',
+            $this->master->getOption( 'response' )
+        );
+		throw new \Exception( __CLASS__ . ' ' . __FUNCTION__ . ' Not supported' );
 		$_params = $this->getDomainOrDomainID( $domain );
 
 		$map = [
