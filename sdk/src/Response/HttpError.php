@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Exception types used by the DonDominio API Client.
+ * Exception types used by the Arsys API Client.
  * @package ArsysPHP
  * @subpackage Exceptions
  */

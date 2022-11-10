@@ -1,7 +1,7 @@
 <?php
 
 /**
- * POST cURL client for the DonDominio API (using SIMPLE-POST).
+ * POST cURL client for the Arsys API (using SIMPLE-POST).
  * @package ArsysPHP
  * @subpackage Client
  */

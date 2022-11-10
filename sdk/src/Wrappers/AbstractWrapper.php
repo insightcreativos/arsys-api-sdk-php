@@ -4,7 +4,7 @@
  * Base for Arsys API module wrappers.
  * Read the online documentation for the API before making any calls.
  *
- * @link https://dev.dondominio.com/api/docs/api/
+ *
  *
  * @package ArsysPHP
  * @subpackage Wrappers

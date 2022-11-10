@@ -56,7 +56,7 @@ class Domain extends AbstractWrapper {
 	 *
 	 * Check the availibility of a domain name.
 	 *
-	 * @link https://dev.dondominio.com/api/docs/api/#check-domain-check
+	 * @link
 	 *
 	 * @param string $domain Domain name to check
 	 *
@@ -73,7 +73,7 @@ class Domain extends AbstractWrapper {
 	 *
 	 * Check if a domain can be transfered.
 	 *
-	 * @link https://dev.dondominio.com/api/docs/api/#check-for-transfer-domain-checkfortransfer
+	 * @link
 	 *
 	 * @param string $domain Domain name to check
 	 *
@@ -105,7 +105,7 @@ class Domain extends AbstractWrapper {
 	 * - tech            array        Associative array of technical contact information.
 	 * - billing        array        Associative array of billing contact information.
 	 *
-	 * @link https://dev.dondominio.com/api/docs/api/#create-domain-create
+	 * @link
 	 *
 	 * @param string $domain Domain name to register
 	 * @param array $args Associative array of parameters
@@ -149,7 +149,7 @@ class Domain extends AbstractWrapper {
 	 * - tech            array        Associative array of technical contact information.
 	 * - billing        array        Associative array of billing contact information.
 	 *
-	 * @link https://dev.dondominio.com/api/docs/api/#transfer-domain-transfer
+	 * @link
 	 *
 	 * @param string $domain Domain name to transfer
 	 * @param array $args Associative array of parameters
@@ -174,7 +174,7 @@ class Domain extends AbstractWrapper {
 	 * ! = required
 	 * - authcode        string        A new authcode to replace the old one
 	 *
-	 * @link https://dev.dondominio.com/api/docs/api/#transfer-restart-domain-transferrestart
+	 * @link
 	 *
 	 * @param string $domain Domain name to update
 	 * @param string $updateType Type of information to modify (contact, nameservers, transferBlock, block, whoisPrivacy)
@@ -221,7 +221,7 @@ class Domain extends AbstractWrapper {
 	 * [updateType = whoisPrivacy]
 	 * ! whoisPrivacy    boolean        Enables or disables the whoisPrivacy service for the domain.
 	 *
-	 * @link https://dev.dondominio.com/api/docs/api/#update-domain-update
+	 * @link
 	 *
 	 * @param string $domain Domain name to update
 	 * @param string $updateType Type of information to modify (contact, nameservers, transferBlock, block, whoisPrivacy)
@@ -376,7 +376,7 @@ class Domain extends AbstractWrapper {
 	 *
 	 * $nameservers = array('ns1.dns.com', 'ns2.dns.com)
 	 *
-	 * @link https://dev.dondominio.com/api/docs/api/#update-nameservers-domain-updatenameservers
+	 * @link
 	 *
 	 * @param string $domain Domain name or Domain ID to be modified
 	 * @param array $nameservers Array containing the nameservers
@@ -418,7 +418,7 @@ class Domain extends AbstractWrapper {
 	 * - tech            array        Associative array of technical contact information.
 	 * - billing        array        Associative array of billing contact information.
 	 *
-	 * @link https://dev.dondominio.com/api/docs/api/#update-contacts-domain-updatecontacts
+	 * @link
 	 *
 	 * @param string $domain Domain name or Domain ID to be modified
 	 * @param array $args Associative array of parameters
@@ -559,7 +559,7 @@ class Domain extends AbstractWrapper {
 	 * ! ipv4            IPv4        IPv4 address for the DNS server
 	 * - ipv6            IPv6        IPv6 address for the DNS server
 	 *
-	 * @link https://dev.dondominio.com/api/docs/api/#gluerecord-create-domain-gluerecordcreate
+	 * @link
 	 *
 	 * @param string $domain Domain name or Domain ID to be modified
 	 * @param string $name Name of the gluerecord to be created
@@ -591,7 +591,7 @@ class Domain extends AbstractWrapper {
 	 * ! ipv4            IPv4        IPv4 address for the DNS server
 	 * - ipv6            IPv6        IPv6 address for the DNS server
 	 *
-	 * @link https://dev.dondominio.com/api/docs/api/#gluerecord-update-domain-gluerecordupdate
+	 * @link
 	 *
 	 * @param string $domain Domain name or Domain ID to be modified
 	 * @param string $name Name of the gluerecord to be updated
@@ -618,7 +618,7 @@ class Domain extends AbstractWrapper {
 	 *
 	 * Deletes an existing gluerecord for a domain.
 	 *
-	 * @link https://dev.dondominio.com/api/docs/api/#gluerecord-delete-domain-gluerecorddelete
+	 * @link
 	 *
 	 * @param string $domain Domain name or Domain ID to be modified
 	 * @param string $name Name of the gluerecord to be deleted
@@ -653,7 +653,7 @@ class Domain extends AbstractWrapper {
 	 * - infoType        string        Type of information to get. Accepted values:
 	 *                                status, contact, nameservers, authcode, service, gluerecords.
 	 *
-	 * @link https://dev.dondominio.com/api/docs/api/#list-domain-list
+	 * @link
 	 *
 	 * @param array $args Associative array of parameters
 	 *
@@ -697,7 +697,7 @@ class Domain extends AbstractWrapper {
 	 * - infoType        string        Type of information to get. Accepted values:
 	 *                                status, contact, nameservers, authcode, service, gluerecords, dnssec.
 	 *
-	 * @link https://dev.dondominio.com/api/docs/api/#get-info-domain-getinfo
+	 * @link
 	 *
 	 * @param string $domain Domain name or Domain ID to get the information from
 	 * @param array $args Associative array of parameters
@@ -748,7 +748,7 @@ class Domain extends AbstractWrapper {
 	 *
 	 * Search for suggestion of domain
 	 *
-	 * @link https://domain.apitool.info/help/index.html#api-Domains-CheckDomain
+	 * @link
 	 *
 	 * @param string $domain Domain name or Domain ID to get the authcode for
 	 *
@@ -776,7 +776,7 @@ class Domain extends AbstractWrapper {
 	 *
 	 * Get the authcode for a domain in the account.
 	 *
-	 * @link https://dev.dondominio.com/api/docs/api/#get-authcode-domain-getauthcode
+	 * @link
 	 *
 	 * @param string $domain Domain name or Domain ID to get the authcode for
 	 *
@@ -802,7 +802,7 @@ class Domain extends AbstractWrapper {
 	/**
 	 * Get the nameservers for a domain in the account.
 	 *
-	 * @link https://domain.apitool.info/help/index.html#api-Domains-GetDomain
+	 * @link
 	 *
 	 * @param string $domain Domain name or Domain ID to get the nameservers for
 	 *
@@ -835,7 +835,7 @@ class Domain extends AbstractWrapper {
 	 *
 	 * Get the gluerecords for a domain in the account.
 	 *
-	 * @link https://dev.dondominio.com/api/docs/api/#get-gluerecords-domain-getgluerecords
+	 * @link
 	 *
 	 * @param string $domain Domain name or Domain ID to get the gluerecords for
 	 *
@@ -857,7 +857,7 @@ class Domain extends AbstractWrapper {
 	 *
 	 * Retrieve the DNSSEC entries associated with a domain
 	 *
-	 * @link http://dev3.dondominio.com/api/docs/api/#get-dnssec-domain-getdnssec
+	 * @link
 	 *
 	 * @param string $domain Domain name or Domain ID to get the dnssec for
 	 *
@@ -886,7 +886,7 @@ class Domain extends AbstractWrapper {
 	 * ! digesttype    integer        Type of digest to use for the DNSSEC entry
 	 * ! digest        string        Digest for the DNSSEC entry
 	 *
-	 * @link https://dev.dondominio.com/api/docs/api/#dnssec-create-domain-dnsseccreate
+	 * @link
 	 *
 	 * @param string $domain Domain name or Domain ID to which attach the DNSSEC entry
 	 * @param array $args Associative array of parameters
@@ -921,7 +921,7 @@ class Domain extends AbstractWrapper {
 	 * ! digesttype    integer        Type of digest to use for the DNSSEC entry
 	 * ! digest        string        Digest for the DNSSEC entry
 	 *
-	 * @link https://dev.dondominio.com/api/docs/api/#dnssec-delete-domain-dnssecdelete
+	 * @link
 	 *
 	 * @param string $domain Domain name or Domain ID containing the DNSSEC entry
 	 * @param array $args Associative array of parameters
@@ -952,7 +952,7 @@ class Domain extends AbstractWrapper {
 	 * ! = required
 	 * - period        integer        Number of years to renew the domain for
 	 *
-	 * @link https://dev.dondominio.com/api/docs/api/#renew-domain-renew
+	 * @link
 	 *
 	 * @param string $domain Domain name or Domain ID to renew
 	 * @param string $curExpDate Current expiration date for this domain
@@ -975,7 +975,7 @@ class Domain extends AbstractWrapper {
 	 * Returns whois data for a domain in a single string field. By default,
 	 * only domains on the user account can be queried.
 	 *
-	 * @link https://dev.dondominio.com/api/docs/api/#whois-domain-whois
+	 * @link
 	 *
 	 * @param string $domain Domain name to be queried
 	 *
@@ -996,7 +996,7 @@ class Domain extends AbstractWrapper {
 	 *
 	 * Resends the contact data verification email.
 	 *
-	 * @link https://dev.dondominio.com/api/docs/api/#resend-verification-mail-domain-resendverificationmail
+	 * @link
 	 *
 	 * @param string $domain Domain or Domain ID to send the verification email for
 	 *
@@ -1018,7 +1018,7 @@ class Domain extends AbstractWrapper {
 	 *
 	 * Resends the FOA authorization email to the owner contact of a domain.
 	 *
-	 * @link https://dev.dondominio.com/api/docs/api/#resend-foa-mail-domain-resendfoamail
+	 * @link
 	 *
 	 * @param string $domain Domain or Domain ID to send the verification mail for
 	 *
@@ -1040,7 +1040,7 @@ class Domain extends AbstractWrapper {
 	 *
 	 * Resets the domain authorization process (only for domains with transfer in process)
 	 *
-	 * @link https://dev.dondominio.com/api/docs/api/#reset-foa-domain-resetfoa
+	 * @link
 	 *
 	 * @param string $domain Domain or Domain ID to send the verification mail for
 	 *
@@ -1066,7 +1066,7 @@ class Domain extends AbstractWrapper {
 	 * - pageLength        integer        Max results (defaults to 1000)
 	 * - page            integer        Number of the page to get (defaults to 1)
 	 *
-	 * @link https://dev.dondominio.com/api/docs/api/#get-history-domain-gethistory
+	 * @link
 	 *
 	 * @param string $domain Domain name or Domain ID
 	 * @param array $args Associative array of parameters
@@ -1095,7 +1095,7 @@ class Domain extends AbstractWrapper {
 	 * - pageLength        integer        Max results (defaults to 1000)
 	 * - page            integer        Number of the page to get (defaults to 1)
 	 *
-	 * @link https://dev.dondominio.com/api/docs/api/#list-deleted-domain-listdeleted
+	 * @link
 	 *
 	 * @param array $args Associative array of parameters
 	 *
